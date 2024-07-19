@@ -13,7 +13,7 @@ sequenceDiagram
 	server-->>browser: HTML document
 	deactivate server
 
-	browser->>server: GET https://studies.cs.helsinki/exampleapp/notes
+	browser->>server: GET https://studies.cs.helsinki/exampleapp/main.css
 	activate server
 	server-->>browser: CSS file
 	deactivate server
