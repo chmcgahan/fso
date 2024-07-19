@@ -26,5 +26,5 @@ sequenceDiagram
 	browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
 	activate server
 	server-->>browser: [{content: "Dappa The Mage", ...}, ...]
-	deactivate browser
+	deactivate server
 ```
