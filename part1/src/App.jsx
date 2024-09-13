@@ -4,15 +4,19 @@ const Header = ({ course }) => {
   )
 }
 
+const Part = ({ part }) => {
+  return <p>{part.name} - {part.exercises} exercises</p>
+}
+
 const Content = ({ content }) => {
   
   const contentElements = [];
 
   for (let i = 0; i < content.length; i++){
     contentElements.push(
-      <p key={i}>
-        {content[i].name} - {content[i].exercises} exercises
-      </p>
+      <div key={i}>
+        <Part part = {content[i]}/>
+      </div>
     )
   };
 
